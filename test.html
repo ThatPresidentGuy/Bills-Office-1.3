@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<body>
+
+
+<script>
+  const downloadFile = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("textarea").value;
+    const file = new Blob([content], {type: 'text/html'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-Document.html";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<button onclick="downloadFile();">save</button>
+
+<button onclick="textRed();">Red text</button>
+
+<button onclick="size48();">Size: 48</button>
+
+<script>
+	function textRed() {
+		document.getElementById('textarea').style = 'color: red;';
+	}
+	function size48() {
+		document.getElementById('textarea').style = 'font-size: 48px;';
+	}
+</script>
+<div id="textarea" class='textarea' contenteditable>
+
+</div>
+
+<style>
+.textarea{
+  width:200px;
+  height:50px;
+  border:1px solid black;
+}
+</style>
+
+</body>

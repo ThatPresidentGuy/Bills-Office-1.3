@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+	<title>Bill's Search Engine</title>
+	
+	<link rel="icon" href="bill.jpeg">
+</head>
+<body id="body">
+
+<script>
+	function darkSearchEngine() {
+		document.getElementById('body').style = 'background-color: black;';
+		document.getElementById('inspiration').style = 'color: white;';
+		document.getElementById('choice').style = 'color: white;';
+		document.getElementById('bookmarks').style = 'color: white;';
+		document.getElementById('settings-head').style = 'color: white;';
+		document.getElementById('new-tab').style = 'color: white;';
+}
+	function lightSearchEngine() {
+		document.getElementById('body').style = 'background-color: white;';
+		document.getElementById('inspiration').style = 'color: black;';
+		document.getElementById('choice').style = 'color: black;';
+		document.getElementById('bookmarks').style = 'color: black;';
+		document.getElementById('settings-head').style = 'color: black;';
+		document.getElementById('new-tab').style = 'color: black;';
+}
+</script>
+
+	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  
+  <button onclick="darkSearchEngine();">Dark Mode</button>
+  
+  <button onclick="lightSearchEngine();">Light Mode</button>
+  
+	<h1 id="heading">Bill's Search Engine</h1>
+	
+	<link rel="stylesheet" href="heading-style.css">
+	
+	<script src="search-engine-defaults.js"></script>
+	
+	<script src="change-background.js"></script>
+	
+	<p><img id="bill" src="bill.jpeg">
+	
+	<p id="inspiration">Bill, our inspiration</p>
+
+<!--Preset bookmarks-->
+
+<h4 id="bookmarks">Bookmarks</h4>
+
+<form method="get" action="https://vail.schoology.com" target="_blank">
+	<button type="submit">Schoology</button>
+</form>
+
+<form method="get" action="https://ps.vail.k12.az.us" target="_blank">
+	<button type="submit">PowerSchool</button>
+</form>
+
+<form method="get" action="https://ola2.performancematters.com/ola/ola.jsp?clientCode=azvail" target="_blank">
+	<button type="submit">Performance Matters</button>
+</form>
+	
+<!--Search Engine-->	
+	
+	<form id="search-engine" method="get" action="http://www.google.com/search" target="_blank">
+<table border="0" cellpadding="0">
+<tr><td>
+<input type="text"   name="q" size="75"
+maxlength="255" value="" />
+<input type="submit" value="Search with Bill..." /></td></tr>
+<tr><td align="center" style="font-size:75%"><br />
+</td></tr></table>
+</div>
+</form>
+
+<!--Search Engine end-->
+
+<h4 id="settings-head">Settings</h4>
+
+<!--def browser-->
+
+<h3 id="choice">Choose a browser (default is Google):</h3>
+
+<button onclick="defaultGoogle();">Google <img src="googlelogo.ico"></button>
+<font id="google-set" style="display: none;">Set</font>
+<br>
+<button onclick="defaultBing();">Bing <img src="binglogo.ico"></button>
+<font id="bing-set" style="display: none;">Set</font>
+<br>
+<button onclick="defaultDuckDuckGo();">DuckDuckGo <img src="duckduckgologo.ico"></button>
+<font id="duckduckgo-set" style="display: none;">Set</font>
+<br>
+<button onclick="defaultWebCrawler();">WebCrawler <img src="webcrawler-logo.ico"></button>
+<font id="webcrawler-set" style="display: none;">Set</font>
+<br>
+
+<!--new tab-->
+
+<p id="new-tab">Open search result in new tab?</p>
+<button onclick="newtabTrue();">Yes (default)</button>
+<button onclick="newtabFalse();">No</button>

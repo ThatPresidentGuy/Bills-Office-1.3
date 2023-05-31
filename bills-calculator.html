@@ -1,0 +1,121 @@
+<!DOCtype html>
+<head>
+
+	<link rel="icon" href="bill.jpeg">
+
+  <title>Bill's Calculator</title>
+</head>
+
+<body id='body'>
+
+	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  
+  <button onclick="calcchangeBackgrounddark();">Dark Mode</button>
+  
+  <button onclick="calcchangeBackgroundlight();">Light Mode</button>
+  
+  <h1 id="head">Bill's Calculator</h1>
+  
+  <img src="bill.jpeg">
+  <p id="inspiration">Bill, our inspiration</p>
+  
+ <!--CSS Stuff-->
+
+  <link rel="stylesheet" href="heading-style.css">
+  
+  <script src='change-background.js'></script>
+  
+  <script>
+    function calcchangeBackgrounddark() {
+  document.getElementById('body').style = 'background-color: black;';
+  document.getElementById('inspiration').style = 'color: white;';
+}
+function calcchangeBackgroundlight() {
+  document.getElementById('body').style = 'background-color: white;';
+  document.getElementById('inspiration').style = 'color: black;';
+}
+  </script>
+
+
+
+
+<!--Calculator code-->
+
+
+<FORM name="Calc">
+<TABLE BORDER=4>
+<TR>
+<TD>
+<input type="text"   name="input" Size="16">
+<br>
+</TD>
+</TR>
+<TR>
+<TD>
+<br>
+<input type="button" name="one"   value="  1  " onclick="Calc.input.value += '1'">
+<input type="button" name="two"   value="  2  " onclick="Calc.input.value += '2'">
+<input type="button" name="three" value="  3  " onclick="Calc.input.value += '3'">
+<input type="button" name="plus"  value="  +  " onclick="Calc.input.value += ' + '">
+<br>
+<input type="button" name="four"  value="  4  " onclick="Calc.input.value += '4'">
+<input type="button" name="five"  value="  5  " onclick="Calc.input.value += '5'">
+<input type="button" name="six"   value="  6  " onclick="Calc.input.value += '6'">
+<input type="button" name="minus" value="  -  " onclick="Calc.input.value += ' - '">
+<br>
+<input type="button" name="seven" value="  7  " onclick="Calc.input.value += '7'">
+<input type="button" name="eight" value="  8  " onclick="Calc.input.value += '8'">
+<input type="button" name="nine"  value="  9  " onclick="Calc.input.value += '9'">
+<input type="button" name="times" value="  x  " onclick="Calc.input.value += ' * '">
+<br>
+<input type="button" name="clear" value="  c  " onclick="Calc.input.value = ''">
+<input type="button" name="zero"  value="  0  " onclick="Calc.input.value += '0'">
+<input type="button" name="DoIt"  value="  =  " onclick="Calc.input.value = eval(Calc.input.value)">
+<input type="button" name="div"   value="  /  " onclick="Calc.input.value += ' / '">
+
+<br>
+<style>
+  input[type=button] {
+    font-size: 30px;
+  }
+  input[type=text] {
+    font-size: 30px;
+  }
+</style>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+<script>
+var result = document.getElementById("text");
+
+function convert()
+{
+  var sqRoot = Math.sqrt(number.value);
+  result.innerHTML = sqRoot.toFixed(2);
+}
+
+function createEventListener()
+{
+  var calcBtn = document.getElementById("sqroot");
+  
+  if (calcBtn.addEventListener)
+  {
+    calcBtn.addEventListener("click", convert, false);
+  }
+  else if (calcBtn.attachEvent)
+  {
+    calcBtn.attachEvent("onclick", convert);
+  }
+}
+
+if (window.addEventListener)
+{
+  window.addEventListener("load", createEventListener, false);
+}
+else if (window.attachEvent)
+{
+  window.attachEvent("onload", createEventListener);
+}</script>
+</body>

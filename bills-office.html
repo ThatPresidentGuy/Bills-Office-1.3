@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+  <title>Bill's Office</title>
+  <link rel="icon" href="bill.jpeg">
+  <script>
+    function officechangeBackgrounddark() {
+  document.getElementById('body').style = 'background-color: black;';
+  document.getElementById('version').style = 'color: white;';
+  document.getElementById('inspiration').style = 'color: white;';
+  document.getElementById('about').style = 'color: white;';
+  document.getElementById('links').style = 'color: white;';
+}
+function officechangeBackgroundlight() {
+  document.getElementById('body').style = 'background-color: white;';
+  document.getElementById('version').style = 'color: black;';
+  document.getElementById('inspiration').style = 'color: black;';
+  document.getElementById('about').style = 'color: black;';
+  document.getElementById('links').style = 'color: black;';
+}
+  </script>
+  
+  <script src='change-background.js'></script>
+</head>
+
+<body id='body'>
+  
+  <p id="version">Version 1.3.0</p>
+ 
+	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  
+  <button onclick="officechangeBackgrounddark();">Dark Mode</button>
+  
+  <button onclick="officechangeBackgroundlight();">Light Mode</button>
+  <h1 id="head">Bill's Office</h1>
+
+  <link rel="stylesheet" href="heading-style.css">
+  
+  <p><img id="bill" src="bill.jpeg"></p>
+  <p id="inspiration">Bill, our inspiration</p>
+  
+  <h3 id="about">About Us</h3>
+  <p style="font-family:Courier New; color:brown;">Bill's Office is an offline and free set of applications that allow you to do whatever you need to do at school or work. We are inspired by Bill, who had so many projects to do with Discord moderating that he needed a better service to do it. However, due to bad eating habits, he died before Google Docs could connect to the internet and before Microsoft Word could be paid for. Because of this, Bill's Documents is always offline and always free.</p>
+  
+  <h3 id="links" style="font-family: Courier New;"><u>Links</u></h3>
+  <p style="font-family: Courier New;"><a href="bills-help.html">Help</a></p>
+  <p style="font-family: Courier New;"><a href="bills-credits.html">Credits page</a></p>
+    
+    
+  <!--HyperLinks-->
+  
+  <link rel="stylesheet" href="button-hover-style.css">
+  
+  <h2 id="hyperlink_choice_notice">Choose where you would like to go in Bill's Office:</h2>
+    <style>
+      #hyperlink_choice_notice {
+        color: blue;
+        font-style: italic;
+      }
+    </style>
+  
+  <!--Bill's Documents Link-->
+  <form action="bills-documents.html" method="get" target="_blank">
+    <button id="bills_documents" type="submit">Bill's Documents</button>
+  </form>
+  
+  <style>
+    #bills_documents {
+      color: white;
+      background-color: blue;
+      font-size: 35px;
+      font-variant: small-caps;
+      font-style: italic;
+      border-radius: 10px;
+	  transition-duration: 0.5s;
+    }
+  </style>
+<br>
+<p id="bills_docs_desc">Bill's Documents is an incredible, high quality text editor that doesn't even compare to the others. Whether you're making an essay, a prayer to Bill or a report, Bill's Documents is your go-to text editor!</p>
+	<style>
+		#bills_docs_desc {
+			font-family: Courier New;
+			color: blue;
+			font-size: 15px;
+		}
+	</style>
+<br>
+  <!--Bill's Spreadsheets Link-->
+  <form action="bills-spreadsheets.html" method="get" target="_blank">
+    <button id="bills_spreadsheets" type="submit">Bill's Spreadsheets</button>
+  </form>
+  
+  <style>
+    #bills_spreadsheets {
+      color: white;
+      background-color: green;
+      font-size: 35px;
+      font-variant: small-caps;
+      font-style: italic;
+      border-radius: 10px;
+	  transition-duration: 0.5s;
+    }
+  </style>
+<br>
+<p id="bills_sheets_desc">Bill's Spreadsheets is your best way to make the best spreadsheets that'll definitely impress your boss/teacher. It makes your work day so much easier, and more fun with Bill!</p>
+	<style>
+		#bills_sheets_desc {
+			color: green;
+			font-family: Courier New;
+			font-size: 15px;
+		}
+	</style>
+<br>
+  <!--Bill's SlideShows Link-->
+  <form action="bills-slideshows.html" method="get" target="_blank">
+    <button id="bills_slideshows" type="submit">Bill's SlideShows</button>
+  </form>
+  
+  <style>
+    #bills_slideshows {
+      color: white;
+      background-color: orange;
+      font-size: 35px;
+      font-variant: small-caps;
+      font-style: italic;
+      border-radius: 10px;
+	  transition-duration: 0.5s;
+    }
+  </style>
+<br>
+<p id="bills_slides_desc">Bill's SlideShows is the perfect way to give presentations to anybody. Not only will Bill's presence of beautifulness be there to guide you, but each slide offers high quality features that will make your audience jealous.</p>
+	<style>
+		#bills_slides_desc {
+			color: orange;
+			font-family: Courier New;
+			font-size: 15px;
+		}
+	</style>
+<br>
+  <!--Bill's Calculator Link-->
+  <form action="bills-calculator.html" method="get" target="_blank">
+    <button id="bills_calculator" type="submit">Bill's Calculator</button>
+  </form>
+  
+    <style>
+    #bills_calculator {
+      color: white;
+      background-color: red;
+      font-size: 35px;
+      font-variant: small-caps;
+      font-style: italic;
+      border-radius: 10px;
+	  transition-duration: 0.5s;
+    }
+  </style>
+  
+<br>
+<p id="bills_calc_desc">Bill's Calculator is an amazing calculator that's there whenever you have anything to deal with math.</p>
+  <style>
+    #bills_calc_desc {
+      color: red;
+      font-family: Courier New;
+      font-size: 15px;
+    }
+  </style>
+<br>
+<!--Bill's Forms Link-->
+<form action="bills-forms.html" method="get" target="_blank">
+  <button id="bills_forms" type="submit">Bill's Forms</button>
+</form>
+
+  <style>
+    #bills_forms {
+      color: white;
+      background-color: purple;
+      font-size: 35px;
+      font-variant: small-caps;
+      font-style: italic;
+      border-radius: 10px;
+	  transition-duration: 0.5s;
+    }
+  </style>
+  <br>
+  <p id="bills_forms_desc">Bill's Forms is the best form app for anyone to ask questions. It works perfectly for in person job interviews and anything else.</p>
+    <style>
+      #bills_forms_desc {
+        color: purple;
+        font-family: Courier New;
+        font-size: 15px;
+      }
+    </style>
+<br>
+<!--Bill's Search Engine Link-->
+<form action="bills-search-engine.html" method="get" target="_blank">
+	<button id="bills-search-engine" type="submit">Bill's Search Engine</button>
+</form>
+
+	<style>
+		#bills-search-engine {
+			color: black;
+			background-color: yellow;
+			font-size: 35px;
+			font-variant: small-caps;
+			font-style: italic;
+			border-radius: 10px;
+			transition-duration: 0.5s;
+		}
+	</style>
+	<br>
+	<p id="bills_search_desc">Bill's Search Engine is perfect for when you need to surf the web. Whenever you need to go outside of Bill's Office to go on the internet, have Bill do it with you!</p>
+		<style>
+			#bills_search_desc {
+				color: #c0e82e;
+				font-family: Courier New;
+				font-size: 15px;
+			}
+		</style>
+	<br>
+
+<li style="font-size:20px; font-family:Courier New; color:red;">Announcements</li>
+  <ul style="font-family:Courier New; color:red;">
+    None
+  </ul>
+  
+</body>

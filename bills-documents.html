@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<head>
+<script>
+  const downloadFile = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("textarea").value;
+    const file = new Blob([content], {type: 'text/normal'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-Document.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+  <link rel="icon" href="bill.jpeg">
+  
+</head>
+<body id='body'>
+  <p id="version">Version 1.2</p>
+  	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  <button onclick="docschangeBackgrounddark();">Dark Mode</button>
+  <button onclick="docschangeBackgroundlight();">Light Mode</button>
+<title>Bill's Documents</title>
+<h1>Bill's Documents</h1>
+
+  <link rel="stylesheet" href="heading-style.css">
+  
+    <script src='dark-mode.js'></script>
+	
+	<script src="text-styling.js"></script>
+    
+	<script src="settings.js"></script>
+	
+	<script src='change-background.js'></script>
+    <script>
+    function docschangeBackgrounddark() {
+  document.getElementById('body').style = 'background-color: black;';
+  document.getElementById("version").style = 'color: white;';
+    document.getElementById("inspiration").style = 'color: white;';
+    document.getElementById("welcome").style = 'color: white;';
+    document.getElementById("to-bills-documents").style = 'color: white;';
+    document.getElementById("quicktips").style = 'color: white;';
+    document.getElementById("ctrlb").style = 'color: white;';
+    document.getElementById("ctrli").style = 'color: white;';
+    document.getElementById("ctrlu").style = 'color: white;';
+    document.getElementById("formatting").style = 'color: white;';
+   document.getElementById("font-color").style = 'color: white;';
+  document.getElementById("fonts").style = 'color: white;';
+   document.getElementById("font-size").style = 'color: white;';
+  document.getElementById('textarea').style = 'color: white; background-color: black;';
+}
+function docschangeBackgroundlight() {
+  document.getElementById('body').style = 'background-color: white;';
+  document.getElementById('version').style = 'color: black;';
+  document.getElementById('inspiration').style = 'color: black;';
+  document.getElementById('welcome').style = 'color: black;';
+  document.getElementById('to-bills-documents').style = 'color: black;';
+  document.getElementById('quicktips').style = 'color: black;';
+  document.getElementById('ctrlb').style = 'color: black;';
+  document.getElementById('ctrli').style = 'color: black;';
+  document.getElementById('ctrlu').style = 'color: black;';
+  document.getElementById('formatting').style = 'color: black;';
+  document.getElementById('font-color').style = 'color: black;';
+  document.getElementById('fonts').style = 'color: black;';
+  document.getElementById('font-size').style = 'color: black;';
+  document.getElementById('textarea').style = 'color: black; background-color: white;';
+}
+</script>
+<script>
+function readTextFile(file, callback, encoding) {
+    var reader = new FileReader();
+    reader.addEventListener('load', function (e) {
+        callback(this.result);
+    });
+    if (encoding) reader.readAsText(file, encoding);
+    else reader.readAsText(file);
+}
+
+function fileChosen(input, output) {
+    if (input.files && input.files[0]) {
+        readTextFile(
+            input.files[0],
+            function (str) {
+                output.value = str;
+            }
+        );
+    }
+}
+
+$('#files').on('change', function () {
+    fileChosen(this, document.getElementById('textarea'));
+})
+</script>
+  
+
+<!--Picture-->
+
+<p><img id="bill" src="bill.jpeg"></p>
+<p id="inspiration">Bill, our inspiration</p>
+<p id="welcome"><font size="5">Welcome</font></p>
+<textarea placeholder="Type name here..."></textarea>
+<p id="to-bills-documents">to Bill's Documents! </p>
+
+
+
+<!--Dropdown-->
+
+<label>What are you typing?</label>
+
+<select id="select_thing">
+  <option>--Select--</option>
+  <option>Essay</option>
+  <option>Report</option>
+  <option>My Prayer to Bill</option>
+  <option>Complete random stuff</option>
+  <option>Other</option>
+</select>
+
+<h2 id="quicktips">Some quick tips:</h2>
+<p id="ctrlb">CTRL + B = Bold text</p>
+<p id="ctrli">CTRL + I = Italic text</p>
+<p id="ctrlu">CTRL + U = Underlined text</p>
+
+<!--Text area-->
+
+  <button onclick='downloadFile();'>save</button>
+  <input type="reset" value="reset">
+  <br>
+  
+  <input name="file" type="file" id="files" class="form-control" value="">
+  
+  <br>
+  <font id="formatting">Formatting:</font>
+  <button onclick="boldText();">Bold</button>
+  <button onclick="italicText();">Italic</button>
+  <button onclick="underlineText();">Underline</button>
+  <br>
+  <font id="font-color">Font Color:</font>
+  <button style="font-size: 30px; background-color: red;" onclick="redText();"> </button>
+  <button style="font-size: 30px; background-color: orange;" onclick="orangeText();"> </button>
+  <button style="font-size: 30px; background-color: yellow;" onclick="yellowText();"> </button>
+  <button style="font-size: 30px; background-color: green;" onclick="greenText();"> </button>
+  <button style="font-size: 30px; background-color: blue;" onclick="blueText();"> </button>
+  <button style="font-size: 30px; background-color: purple;" onclick="purpleText();"> </button>
+  <button style="font-size: 30px; background-color: black;" onclick="blackText();"> </button>
+  <br>
+  <font id="fonts">Fonts: (note that some might not work)</font>
+  <button style="font-family: 'Arial';" onclick="arialFont();">Arial</button>
+  <button style="font-family: 'Times New Roman';" onclick="newromanFont();">Times New Roman</button>
+  <button style="font-family: 'Garamond';" onclick="garamondFont();">Garamond</button>
+  <button style="font-family: 'Courier New';" onclick="courierFont();">Courier New</button>
+  <br>
+  <font id="font-size">Font Size:</font>
+  <button style="font-size: 8;" onclick="fontsizeEight();">8</button>
+  <button style="font-size: 12;" onclick="fontsizeTwelve();">12</button>
+  <button style="font-size: 16;" onclick="fontsizeSixteen();">16</button>
+  <button style="font-size: 20;" onclick="fontsizeTwenty();">20</button>
+  <br>
+<textarea id="textarea" rows="1000" cols="1000" placeholder="start typing with Bill here!"></textarea>
+
+<button onclick="Magic();">magic</button><br>
+
+</body>
+
+

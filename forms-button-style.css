@@ -1,0 +1,6 @@
+#yes-button:focus {
+  background-color: red;
+}
+#no-button:focus {
+  background-color: green;
+}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<title>test for js</title>
+<textarea class="1title"></textarea>
+<textarea class="1body"></textarea>
+<button onclick="downloadFile();">save</button>
+<script>
+  const downloadFile = () => {
+    const link= document.createElement("a");
+    const content = document.getElementByClassName("1title").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "test-success.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<head>
+
+	<link rel="icon" href="bill.jpeg">
+
+  <title>Bill's SlideShows</title>
+</head>
+
+<body id='body'>
+
+	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  
+  <button onclick="slideschangeBackgrounddark();">Dark Mode</button>
+  
+  <button onclick="slideschangeBackgroundlight();">Light Mode</button>
+  
+  <h1 id="head">Bill's SlideShows</h1>
+  
+  <img src="bill.jpeg">
+  <p id="inspiration">Bill, our inspiration</p>
+  
+ <!--CSS Stuff-->
+
+  <link rel="stylesheet" href="heading-style.css">
+  
+  <link rel="stylesheet" href="slideshow-style.css">
+  
+  <script src='change-background.js'></script>
+  
+  <style>
+	h3 {
+	text-align: center;
+	}
+  </style>
+  
+  <!--Slide 1-->
+  
+ <h3 id="slide1text">Slide One: <textarea id="slide1title" placeholder="slide 1 title here..."></textarea></h3>
+<textarea id="slide1" rows="35" cols="100"></textarea>
+<button onclick="downloadFile();">save slide</button>
+
+	<!--Slide 2-->
+
+ <h3 id="slide2text">Slide Two: <textarea id="slide2title" placeholder="slide 2 title here..."></textarea></h3>
+<textarea id="slide2" rows="35" cols="100"></textarea>
+<button onclick="downloadFile2();">save slide</button>
+
+	<!--Slide 3-->
+
+ <h3 id="slide3text">Slide Three: <textarea id="slide3title" placeholder="slide 3 title here..."></textarea></h3>
+<textarea id="slide3" rows="35" cols="100"></textarea>
+<button onclick="downloadFile3();">save slide</button>
+
+	<!--Slide 4-->
+
+ <h3 id="slide4text">Slide Four: <textarea id="slide4title" placeholder="slide 4 title here..."></textarea></h3>
+<textarea id="slide4" rows="35" cols="100"></textarea>
+<button onclick="downloadFile4();">save slide</button>
+
+	<!--Slide 5-->
+
+ <h3 id="slide5text">Slide Five: <textarea id="slide5title" placeholder="slide 5 title here..."></textarea></h3>
+<textarea id="slide5" rows="35" cols="100"></textarea>
+<button onclick="downloadFile5();">save slide</button>
+
+	<!--Slide 6-->
+
+ <h3 id="slide6text">Slide Six: <textarea id="slide6title" placeholder="slide 6 title here..."></textarea></h3>
+<textarea id="slide6" rows="35" cols="100"></textarea>
+<button onclick="downloadFile6();">save slide</button>
+
+	<!--Slide 7-->
+
+ <h3 id="slide7text">Slide Seven: <textarea id="slide7title" placeholder="slide 7 title here..."></textarea></h3>
+<textarea id="slide7" rows="35" cols="100"></textarea>
+<button onclick="downloadFile7();">save slide</button>
+
+	<!--Slide 8-->
+
+ <h3 id="slide8text">Slide Eight: <textarea id="slide8title" placeholder="slide 8 title here..."></textarea></h3>
+<textarea id="slide8" rows="35" cols="100"></textarea>
+
+	<!--Slide 9-->
+
+ <h3 id="slide9text">Slide Nine: <textarea id="slide9title" placeholder="slide 9 title here..."></textarea></h3>
+<textarea id="slide9" rows="35" cols="100"></textarea>
+<button onclick="downloadFile9();">save slide</button>
+
+	<!--Slide 10-->
+
+ <h3 id="slide10text">Slide Ten: <textarea id="slide10title" placeholder="slide 10 title here..."></textarea></h3>
+<textarea id="slide10" rows="35" cols="100"></textarea>
+<button onclick="downloadFile10();">save slide</button>
+
+<script>
+  function slideschangeBackgrounddark() {
+  document.getElementById('body').style = 'background-color: black;';
+  document.getElementById('inspiration').style = 'color: white;';
+  document.getElementById('slide1text').style = 'color: white;';
+  document.getElementById('slide1title').style = 'color: white; background-color: black;';
+  document.getElementById('slide1').style = 'color: white; background-color: black;';
+  document.getElementById('slide2text').style = 'color: white;';
+  document.getElementById('slide2title').style = 'color: white; background-color: black;';
+  document.getElementById('slide2').style = 'color: white; background-color: black;';
+  document.getElementById('slide3text').style = 'color: white;';
+  document.getElementById('slide3title').style = 'color: white; background-color: black;';
+  document.getElementById('slide3').style = 'color: white; background-color: black;';
+  document.getElementById('slide4text').style = 'color: white;';
+  document.getElementById('slide4title').style = 'color: white; background-color: black;';
+  document.getElementById('slide4').style = 'color: white; background-color: black;';
+  document.getElementById('slide5text').style = 'color: white;';
+  document.getElementById('slide5title').style = 'color: white; background-color: black;';
+  document.getElementById('slide5').style = 'color: white; background-color: black;';
+  document.getElementById('slide6text').style = 'color: white;';
+  document.getElementById('slide6title').style = 'color: white; background-color: black;';
+  document.getElementById('slide6').style = 'color: white; background-color: black;';
+  document.getElementById('slide7text').style = 'color: white;';
+  document.getElementById('slide7title').style = 'color: white; background-color: black;';
+  document.getElementById('slide7').style = 'color: white; background-color: black;';
+  document.getElementById('slide8text').style = 'color: white;';
+  document.getElementById('slide8title').style = 'color: white; background-color: black;';
+  document.getElementById('slide8').style = 'color: white; background-color: black;';
+  document.getElementById('slide9text').style = 'color: white;';
+  document.getElementById('slide9title').style = 'color: white; background-color: black;';
+  document.getElementById('slide9').style = 'color: white; background-color: black;';
+  document.getElementById('slide10text').style = 'color: white;';
+  document.getElementById('slide10title').style = 'color: white; background-color: black;';
+  document.getElementById('slide10').style = 'color: white; background-color: black;';
+}
+function slideschangeBackgroundlight() {
+  document.getElementById('body').style = 'background-color: white;';
+  document.getElementById('inspiration').style = 'color: black;';
+  document.getElementById('slide1text').style = 'color: black;';
+  document.getElementById('slide1title').style = 'color: black; background-color: white;';
+  document.getElementById('slide1').style = 'color: black; background-color: white;';
+  document.getElementById('slide2text').style = 'color: black;';
+  document.getElementById('slide2title').style = 'color: black; background-color: white;';
+  document.getElementById('slide2').style = 'color: black; background-color: white;';
+  document.getElementById('slide3text').style = 'color: black;';
+  document.getElementById('slide3title').style = 'color: black; background-color: white;';
+  document.getElementById('slide3').style = 'color: black; background-color: white;';
+  document.getElementById('slide4text').style = 'color: black;';
+  document.getElementById('slide4title').style = 'color: black; background-color: white;';
+  document.getElementById('slide4').style = 'color: black; background-color: white;';
+  document.getElementById('slide5text').style = 'color: black;';
+  document.getElementById('slide5title').style = 'color: black; background-color: white;';
+  document.getElementById('slide5').style = 'color: black; background-color: white;';
+  document.getElementById('slide6text').style = 'color: black;';
+  document.getElementById('slide6title').style = 'color: black; background-color: white;';
+  document.getElementById('slide6').style = 'color: black; background-color: white;';
+  document.getElementById('slide7text').style = 'color: black;';
+  document.getElementById('slide7title').style = 'color: black; background-color: white;';
+  document.getElementById('slide7').style = 'color: black; background-color: white;';
+}
+</script>
+
+
+
+
+
+<!--JavaScript Stuff-->
+<script>
+  const downloadFile = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide1").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow1.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile2 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide2").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow2.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile3 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide3").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow3.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile4 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide4").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow4.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile5 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide5").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow5.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile6 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide6").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow6.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile7 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide7").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow7.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile8 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide8").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow8.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile9 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide9").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow9.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+<script>
+  const downloadFile10 = () => {
+    const link= document.createElement("a");
+    const content = document.getElementById("slide10").value;
+    const file = new Blob([content], {type: 'text/plain'});
+    link.href = URL.createObjectURL(file);
+    link.download = "Bills-SlideShow10.txt";
+    link.click();
+    URL.revokeObjectURL(link.href);
+  };
+</script>
+
+</body>
+
+
+
+
+

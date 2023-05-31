@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+
+	<link rel="icon" href="bill.jpeg">
+
+  <title>Bill's Forms</title>
+</head>
+
+<body id='body'>
+
+	<input id = "colorInput" type = "color">
+  <button onclick = "selectColor();">Change Background</button>
+  
+  <button onclick="formsDark();">Dark Mode</button>
+  
+  <button onclick="formsLight();">Light Mode</button>
+  
+  <h1 id="head">Bill's Forms</h1>
+  
+  <img src="bill.jpeg">
+  <p id="inspiration">Bill, our inspiration</p>
+
+<!--CSS Stuff-->
+  <link rel="stylesheet" href="heading-style.css">
+  
+  <link rel="stylesheet" href="slideshow-style.css">
+  
+  <link rel="stylesheet" href="forms-button-style.css">
+ 
+  <script src='change-background.js'></script>
+  
+  <script>
+    function formsDark() {
+      document.getElementById('body').style = 'background-color: black;';
+      document.getElementById('inspiration').style = 'color: white;';
+      document.getElementById('question1text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement1').style = 'color: white;';
+      document.getElementById('answer1text').style = 'color: white; background-color: black;';
+      document.getElementById('question2text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement2').style = 'color: white;';
+      document.getElementById('answer2text').style = 'color: white; background-color: black;';
+      document.getElementById('question3text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement3').style = 'color: white;';
+      document.getElementById('answer3text').style = 'color: white; background-color: black;';
+      document.getElementById('question4text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement4').style = 'color: white;';
+      document.getElementById('answer5text').style = 'color: white; background-color: black;';
+      document.getElementById('question6text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement6').style = 'color: white;';
+      document.getElementById('answer7text').style = 'color: white; background-color: black;';
+      document.getElementById('question8text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement8').style = 'color: white;';
+      document.getElementById('answer8text').style = 'color: white; background-color: black;';
+      document.getElementById('question9text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement9').style = 'color: white;';
+      document.getElementById('answer9text').style = 'color: white; background-color: black;';
+      document.getElementById('question10text').style = 'color: white; background-color: black;';
+      document.getElementById('requirement10').style = 'color: white;';
+      document.getElementById('answer10text').style = 'color: white; background-color: black;';
+}
+    function formsLight() {
+            document.getElementById('body').style = 'background-color: white;';
+      document.getElementById('inspiration').style = 'color: black;';
+      document.getElementById('question1text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement1').style = 'color: black;';
+      document.getElementById('answer1text').style = 'color: black; background-color: white;';
+      document.getElementById('question2text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement2').style = 'color: black;';
+      document.getElementById('answer2text').style = 'color: black; background-color: white;';
+      document.getElementById('question3text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement3').style = 'color: black;';
+      document.getElementById('answer3text').style = 'color: black; background-color: white;';
+      document.getElementById('question4text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement4').style = 'color: black;';
+      document.getElementById('answer5text').style = 'color: black; background-color: white;';
+      document.getElementById('question6text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement6').style = 'color: black;';
+      document.getElementById('answer7text').style = 'color: black; background-color: white;';
+      document.getElementById('question8text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement8').style = 'color: black;';
+      document.getElementById('answer8text').style = 'color: black; background-color: white;';
+      document.getElementById('question9text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement9').style = 'color: black;';
+      document.getElementById('answer9text').style = 'color: black; background-color: white;';
+      document.getElementById('question10text').style = 'color: black; background-color: white;';
+      document.getElementById('requirement10').style = 'color: black;';
+      document.getElementById('answer10text').style = 'color: black; background-color: white;';
+}
+</script>
+    }
+  </script>
+  
+<!--Directions-->
+<h4 id="directions-head">Directions:</h4>
+<p id="directions">In the text boxes below, type your questions. Click the buttons to specify if they are required or optional. Then, give the computer to the person and they will answer.</p>
+
+<!--Form-->
+<textarea id="question1text" placeholder="type first question here..."></textarea>
+<p id="requirement1">Is this question required?</p>
+<button id="yes-button1" onclick="yesbutton1Color();">Yes</button>
+<button id="no-button1" onclick="nobutton1Color();">No</button>
+<textarea id="answer1text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question2text" placeholder="type first question here..."></textarea>
+<p id="requirement2">Is this question required?</p>
+<button id="yes-button2" onclick="yesbutton2Color();">Yes</button>
+<button id="no-button2" onclick="nobutton2Color();">No</button>
+<textarea id="answer2text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question3text" placeholder="type first question here..."></textarea>
+<p id="requirement3">Is this question required?</p>
+<button id="yes-button3" onclick="yesbutton3Color();">Yes</button>
+<button id="no-button3" onclick="nobutton3Color()">No</button>
+<textarea id="answer3text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question4text" placeholder="type first question here..."></textarea>
+<p id="requirement4">Is this question required?</p>
+<button id="yes-button4" onclick="yesbutton4Color();">Yes</button>
+<button id="no-button4" onclick="nobutton4Color()">No</button>
+<textarea id="answer4text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question5text" placeholder="type first question here..."></textarea>
+<p id="requirement5">Is this question required?</p>
+<button id="yes-button5" onclick="yesbutton5Color();">Yes</button>
+<button id="no-button5">No</button>
+<textarea id="answer5text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question6text" placeholder="type first question here..."></textarea>
+<p id="requirement6">Is this question required?</p>
+<button id="yes-button6" onclick="yesbutton6Color();">Yes</button>
+<button id="no-button6">No</button>
+<textarea id="answer6text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question7text" placeholder="type first question here..."></textarea>
+<p id="requirement7">Is this question required?</p>
+<button id="yes-button7" onclick="yesbutton7Color();">Yes</button>
+<button id="no-button7">No</button>
+<textarea id="answer7text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question8text" placeholder="type first question here..."></textarea>
+<p id="requirement8">Is this question required?</p>
+<button id="yes-button8" onclick="yesbutton8Color();">Yes</button>
+<button id="no-button8">No</button>
+<textarea id="answer8text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question9text" placeholder="type first question here..."></textarea>
+<p id="requirement9">Is this question required?</p>
+<button id="yes-button9" onclick="yesbutton9Color();">Yes</button>
+<button id="no-button9">No</button>
+<textarea id="answer9text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
+<textarea id="question10text" placeholder="type first question here..."></textarea>
+<p id="requirement10">Is this question required?</p>
+<button id="yes-button10" onclick="yesbutton10Color();">Yes</button>
+<button id="no-button10">No</button>
+<textarea id="answer10text" placeholder="type answer here..." rows="35" cols="100"></textarea>
+
